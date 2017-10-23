@@ -1,0 +1,236 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html{
+	overflow-y: scroll;
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	height: 100%;
+	margin: 0px;
+	background: url("../images/intersection.png");
+}
+
+h1, h2, h3{
+	font-family:  'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #dddddd;
+}
+
+h1{
+	font-size: 2em;
+	margin: 0.7em 0;
+	font-weight: bolder;
+}
+
+h2{
+	font-size:1.5em;
+	padding-left:10px;
+	margin: 0.83em 0;
+	font-weight: bold;
+}
+
+h3{
+	font-size: 1.17em;
+	text-align:center;
+	margin: 1em 0;
+	font-weight: bold;
+}
+
+p{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	margin: 1em 0;
+}
+
+a:link, a:visited{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	text-decoration: none;
+}
+
+a:active, a:hover{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #4aaaa5;
+	text-decoration: underline;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+header{
+	background: #fff;
+	border-bottom: 2px solid #dddddd;
+}
+
+.header-box{
+	float: left;
+	color: #fff;
+	background: #4aaaa5;
+	text-align: center;
+	padding: 30px;
+	margin: 0px;
+}
+
+.header-nav{
+	float:right;
+	padding: 30px;
+	margin: 0px;
+	color: #dddddd;
+}
+
+.content-box{
+	float: left;
+	width: 650px;
+	border: 1px solid #dddddd;
+	margin: 20px 0 20px 0;
+	line-height: 24px;
+	background: #fff;
+}
+
+.content{
+	line-height: 24px;
+	background: #fff;
+	padding: 15px 15px 30px 15px;
+}
+
+.sidebar-box{
+	float: right;
+	width: 260px;
+	margin-top: 20px;
+}
+
+.sidebar{
+	border: 1px solid #dddddd;
+	padding: 15px 15px 30px 15px;
+	background: #fff;
+}
+
+.center{
+	text-align: center;
+}
+
+.social-img{
+	width: 50px;
+	display: inline-block;
+}
+
+.footer-wrap{
+	min-height: 100%;
+}
+
+.above-footer{
+	padding-bottom: 76px;
+}
+
+footer{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	background: #666666;
+	border-top: 4px solid #4aaaa5;
+	padding: 30px;
+	margin-top: -76px;
+}
+
+
+#profile{
+	float: left;
+	width: 300px;
+	padding: 0px 10px 10px 0px;
+}
+
+.port-img{
+	float: left;
+	position: relative;
+	padding: 15px;
+}
+
+.banner{
+	position: absolute;
+	width: 290px;
+	bottom: 40px;
+	left: 10px;
+	background: #4aaaa5;
+	text-align: center;
+	color: #fff;
+	padding: 15px 0;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 980px) {
+
+	.wrapper{
+		width: 760px;
+	}
+
+	.content-box{
+		width: 455px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	
+	.wrapper{
+		width: 630px;
+	}
+
+	.content-box{
+		width: 100%;
+		margin: 20px 0 20px 0;
+		clear: both;
+		
+	}
+
+	.sidebar-box{
+		width: 100%;
+		margin-bottom: 20px;
+		clear: both;
+	}
+
+}
+
+@media screen and (max-width: 640px){
+
+	header{
+		position: static;
+	}
+
+	.wrapper{
+		width: 550px;
+	}
+
+	.header-box{
+		clear: both;
+		padding: 30px 0;
+		width: 100%;
+	}
+
+	.header-nav{
+		clear:both;
+		width: 100%;
+		text-align: center;
+		padding: 30px 0;
+	}
+
+	.content-box{
+		width: 100%;
+	}
+
+	.sidebar-box{
+		width: 100%;
+	}
+
+}
